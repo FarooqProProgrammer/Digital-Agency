@@ -1,0 +1,27 @@
+/* Importing Google font - Fira Sans */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* ----------------- HEADER CSS ----------------------------- */
+header ul li {
+    @apply hover:text-gray-400;
+}
+header .icon {
+    display: none;
+}
+
+@media (max-width:990px) {
+    header ul {
+        display: none;
+    }
+    header .icon {
+        display: block;
+    }
+}
